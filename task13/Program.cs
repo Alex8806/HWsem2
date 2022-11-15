@@ -1,16 +1,31 @@
-﻿System.Console.Write("Введите число с тремя и более цифрами ");
+﻿// Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+// 645 -> 5
+
+// 78 -> третьей цифры нет
+
+// 32679 -> 6
+
+
+System.Console.Write("Введите число с тремя и более цифрами ");
 
 
 int number = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 
-while (number < 100)
-    {System.Console.WriteLine("вы ввели число менее чем с тремя цифрами");
-        System.Console.Write("Введите число с тремя и более цифрами ");
-        number = Math.Abs(Convert.ToInt32(Console.ReadLine()));}
-
+if (number > 100)
+{
 
     int a = number % 100;
 
     number -= a;
 
     System.Console.Write("третья цифра: " + (number % 1000) / 100);
+}
+
+else
+{
+    System.Console.WriteLine("третей цифры нет");
+}
+
+// Second way
+
