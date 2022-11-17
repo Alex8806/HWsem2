@@ -12,7 +12,7 @@ System.Console.Write("Введите число с тремя и более ци
 
 int number = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 
-if (number > 100)
+if (number >= 100)
 {
 
     int a = number % 100;
