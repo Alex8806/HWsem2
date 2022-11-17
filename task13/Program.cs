@@ -19,13 +19,11 @@ if (number > 100)
 
     number -= a;
 
-    System.Console.Write("третья цифра: " + (number % 1000) / 100);
+    System.Console.WriteLine("третья цифра: " + (number % 1000) / 100);
 }
 
 else
 {
     System.Console.WriteLine("третей цифры нет");
 }
-
-// Second way
 

@@ -16,7 +16,7 @@ while ((number < 100 || number >999) && i>0)
         number = Math.Abs(Convert.ToInt32(Console.ReadLine()));
         i--;}
 
-if (number < 100 || number >999){System.Console.WriteLine("вы ввели не трёхзначное число");}
+if (number < 100 || number >999){System.Console.WriteLine("Вы ввели не трёхзначное число, попыток больше нет.\nДо свидания.");}
 
 
 else{
