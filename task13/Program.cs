@@ -12,18 +12,17 @@ System.Console.Write("Введите число с тремя и более ци
 
 int number = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 
-if (number >= 100)
+if(number < 100)
 {
-
-    int a = number % 100;
-
-    number -= a;
-
-    System.Console.WriteLine("третья цифра: " + (number % 1000) / 100);
+System.Console.WriteLine("третей цифры нет");
 }
+   
 
 else
 {
-    System.Console.WriteLine("третей цифры нет");
+    while (number>999){
+        number /=10;
+    }
+    System.Console.WriteLine("третья цифра : " + (number%10));
 }
 

@@ -6,7 +6,9 @@ System.Console.Write("Второй вариант, Введите число с 
 string? chislo = Console.ReadLine();
 
 int i=Convert.ToInt32(chislo); // проверка число ли это
-i= chislo.Length;
+
+int i= chislo.Length;
+
 
 if ( i > 2 && chislo[0] != '-' )
 {
