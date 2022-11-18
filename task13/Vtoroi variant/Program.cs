@@ -7,7 +7,7 @@ string? chislo = Console.ReadLine();
 
 int i=Convert.ToInt32(chislo); // проверка число ли это
 
-int i= chislo.Length;
+i= chislo.Length;
 
 
 if ( i > 2 && chislo[0] != '-' )
